@@ -37,7 +37,7 @@ class Database
         $database = $args['database'];
         $username = $args['username'];
 
-        $this->db = new PDO("$type:host=$host;$port" . "dbname=$database;charset=$charset", $username, $password);
+        $this->db = new PDO("$type:host=$host;port=$port;" . "dbname=$database;charset=$charset", $username, $password);
         $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
 
