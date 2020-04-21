@@ -32,7 +32,7 @@ class Database
         $type     = isset($args['type']) ? $args['type'] : 'mysql';
         $host     = isset($args['host']) ? $args['host'] : 'localhost';
         $charset  = isset($args['charset']) ? $args['charset'] : 'utf8';
-        $port     = isset($args['port']) ? 'port=' . $args['port'] . ';' : '';
+        $port     = $args['port'];
         $password = isset($args['password']) ? $args['password'] : '';
         $database = $args['database'];
         $username = $args['username'];
